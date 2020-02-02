@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label><input type="text" name="number" id="first"></label>
+    <label><input type="text" name="number" id="second"></label>
+</form>
+<button type="button" onclick="addition()">Addition(+)</button>
+<button type="button" onclick="subtraction()">Subtraction(-)</button>
+<button type="button" onclick="multiplication()">Multiplication(X)</button>
+<button type="button" onclick="division()">Division(/)</button>
+<script>
+    function addition() {
+        let first = document.getElementById('first').value;
+        let second = document.getElementById("second").value;
+        alert("result: " + (parseFloat(first) + parseFloat(second)));
+    }
+
+    function subtraction() {
+        let first = document.getElementById('first').value;
+        let second = document.getElementById("second").value;
+        alert("result: " + (parseFloat(first) - parseFloat(second)));
+    }
+
+    function multiplication() {
+        let first = document.getElementById('first').value;
+        let second = document.getElementById("second").value;
+        alert("result: " + (parseFloat(first) * parseFloat(second)));
+    }
+
+    function division() {
+        let first = document.getElementById('first').value;
+        let second = document.getElementById("second").value;
+        alert("result: " + (parseFloat(first) / parseFloat(second)));
+    }
+
+</script>
+</body>
